@@ -14,8 +14,8 @@ A React application built with **Vite + React 19**, **React Router v7**, and **M
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd react-js-project
+git clone <https://github.com/FayzulIslamFaisal/react-js-todo-form-builder.git>
+cd react-js-todo-form-builder
 
 # 2. Install dependencies
 npm install
@@ -41,27 +41,37 @@ npm run preview
 src/
 ├── components/
 │   └── Navbar/
-│       ├── Navbar.jsx          # Sticky navigation with active links
+│       ├── Navbar.jsx            # Sticky navigation with active links
 │       └── Navbar.module.css
+│
 ├── pages/
 │   ├── Home/
-│   │   ├── Home.jsx            # Landing page with feature cards
+│   │   ├── Home.jsx              # Landing page with feature cards
 │   │   └── Home.module.css
+│   │
 │   ├── TodoList/
-│   │   ├── TodoList.jsx        # Feature 1 – Todo list page
+│   │   ├── TodoList.jsx          # Feature 1 – Todo list page
 │   │   └── TodoList.module.css
+│   │
 │   ├── FormBuilder/
-│   │   ├── FormBuilder.jsx     # Feature 2 – Form builder page
+│   │   ├── FormBuilder.jsx       # Feature 2 – Form builder page
 │   │   └── FormBuilder.module.css
-│   └── FormPreview/
-│       ├── FormPreview.jsx     # Feature 2 – Form preview & submit
-│       └── FormPreview.module.css
+│   │
+│   ├── FormPreview/
+│   │   ├── FormPreview.jsx       # Feature 2 – Form preview & submit
+│   │   └── FormPreview.module.css
+│   │
+│   └── FormsList/
+│       ├── FormsList.jsx         # Feature 2 – Forms list page
+│       └── FormsList.module.css
+│
 ├── store/
-│   ├── useTodoStore.js         # Custom hook – Todo state + persistence
-│   └── useFormStore.js         # Custom hook – Form schema + persistence
-├── App.jsx                     # Root component with React Router
-├── main.jsx                    # Entry point
-└── index.css                   # Global design system (CSS variables)
+│   ├── useTodoStore.js           # Custom hook – Todo state + persistence
+│   └── useFormStore.js           # Custom hook – Form schema + persistence
+│
+├── App.jsx                       # Root component with React Router
+├── main.jsx                      # Entry point
+└── index.css                     # Global design system (CSS variables)
 ```
 
 ---
@@ -74,7 +84,8 @@ Used **React Router v7** with the following routes:
 |------|------|
 | `/` | Home landing page |
 | `/todos` | Todo List |
-| `/form-builder` | Dynamic Form Builder |
+| `/forms` |  Form List |
+| `/form-builder` | Dynamic Form Builder|
 | `/form-preview` | Form Preview & Submit |
 
 ---
